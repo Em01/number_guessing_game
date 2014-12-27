@@ -44,4 +44,22 @@ class Game
 		return randomNo = 1 + rand(100)
 	end
 
+	def play_game 
+
+		number = generate_number 
+
+		loop do 
+
+			Console_Screen.cls 
+
+			print "\nEnter your guess and press the Enter key: "
+
+			reply = STDIN.gets
+			reply.chop!
+			reply = reply.to_i
+
+			if reply < 1 or reply > 100 then
+				redo 
+			end 
+
 end
