@@ -10,3 +10,11 @@ class Screen
 	end
 
 end
+
+class Game
+
+	def display_greeting
+	end
+
+	
+	end
