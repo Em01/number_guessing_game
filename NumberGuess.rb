@@ -38,6 +38,10 @@ class Game
 		print "Press Enter to continue"
 
 		Console_Screen.pause
+	end
 
+	def generate_number
+		return randomNo = 1 + rand(100)
+	end
 
 end
